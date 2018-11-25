@@ -38,13 +38,10 @@ public class Beginning {
             GenerateReport generateReport = new GenerateReport(a);
             if (a == 5) {
                 generateReport.generateReport(a);
-            }
 
-            else {
-                if (a < 1 && a > 5) {
-                    System.out.println("Не правильно введене значення." + "\n");
-                    beginning();
-                }
+            } else {
+                System.out.println("Не правильно введене значення." + "\n");
+                beginning();
             }
         } catch (Exception e) {
             System.out.println("Не правильно введене значення." + "\n");

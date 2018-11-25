@@ -83,10 +83,10 @@ public class NewEmployee {
 
                     writer.write(id + ";" + lastName + ";" + firstName + ";" + surname + ";" + dateBirth + ";"
                             + position + ";" + department + ";" + numberRoom + ";" + telefon + ";" +
-                            emeil + ";" + salary + ";" + dateWork + ";" + note + "\n");
+                            emeil + ";" + salary + ";" + dateWork + ";" + note + ";" + "\n");
                     writer1.write(id + ";" + lastName + ";" + firstName + ";" + surname + ";" + dateBirth + ";"
                             + position + ";" + department + ";" + numberRoom + ";" + telefon + ";" +
-                            emeil + ";" + salary + ";" + dateWork + ";" + note + "\n");
+                            emeil + ";" + salary + ";" + dateWork + ";" + note + ";" + "\n");
                     writer.close();
                     writer1.close();
                 }

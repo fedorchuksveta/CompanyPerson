@@ -63,7 +63,7 @@ public class GenerateReport {
 
             System.out.println("Введіть посаду");
             String post = scanner.nextLine();
-            printO(post);
+            printGenerate(post);
         }
 
         if (answer == 3) {
@@ -71,7 +71,7 @@ public class GenerateReport {
 
             System.out.println("Введіть підрозділ");
             String departmant = scanner.nextLine();
-            printO(departmant);
+            printGenerate(departmant);
         }
 
         if (answer == 4) {
@@ -79,7 +79,7 @@ public class GenerateReport {
 
             System.out.println("Введіть номер кімнати");
             String room = scanner.nextLine();
-            printO(room);
+            printGenerate(room);
         }
 
         if (answer == 5) {
@@ -89,7 +89,7 @@ public class GenerateReport {
 
     }
 
-    public void printO(String i) throws IOException {
+    public void printGenerate(String i) throws IOException {
         FileInputStream fis = new FileInputStream(new File("outputReg.txt"));
         byte[] content = new byte[fis.available()];
         fis.read(content);
