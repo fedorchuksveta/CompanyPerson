@@ -15,8 +15,8 @@ public class RemoveEmployee {
 
     void removeEmployee(int a) throws IOException {
 
-        sInputFile = new File("outputReg.txt");
-        sTemporaryFile = new File("output.txt");
+        sInputFile = new File("output.txt");
+        sTemporaryFile = new File("outputReg.txt");
 
         sFileReader = new BufferedReader(new FileReader(sInputFile));
         sFileWriter = new BufferedWriter(new FileWriter(sTemporaryFile));
@@ -43,7 +43,7 @@ public class RemoveEmployee {
             }
             sFileReader.close();
             sFileWriter.close();
-            sInputFile.delete();
+     //       sInputFile.delete();
             sTemporaryFile.renameTo(sInputFile);
             System.out.println("Працівник видалений.");
            Restart restart = new Restart();

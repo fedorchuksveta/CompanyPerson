@@ -123,5 +123,21 @@ public class Employee {
     public Employee() {
         this.id = count++;
     }
+
+    public Employee(int id, String lastName, String firstName, String surname, String dateBirth, String position, String department, int numberRoom, int telefon, String emeil, int salary, String dateWork, String note) {
+        this.id = id;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.surname = surname;
+        this.dateBirth = dateBirth;
+        this.position = position;
+        this.department = department;
+        this.numberRoom = numberRoom;
+        this.telefon = telefon;
+        this.emeil = emeil;
+        this.salary = salary;
+        this.dateWork = dateWork;
+        this.note = note;
+    }
 }
 

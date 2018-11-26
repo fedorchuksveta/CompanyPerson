@@ -60,6 +60,7 @@ public class EditEmployee {
                     int yn = sqr1.nextInt();
 
                     if (yn == 1) {
+
                         ArrayList<Employee> employees = new ArrayList<>();
 
                         Employee employee = new Employee();
@@ -136,7 +137,7 @@ public class EditEmployee {
         sFileReader.close();
         sFileWriter.close();
 
-        sInputFile.delete();
+ //       sInputFile.delete();
         sTemporaryFile.renameTo(sInputFile);
 
         Restart restart = new Restart();
